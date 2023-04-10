@@ -61,5 +61,17 @@ namespace MethodsExercise
             var answer = num1 % num2;
             return answer;
         }
+
+        public static int Sum(params int[] list)
+            {
+            int sum = 0;
+                for (int i = 0; i < list.Length; i++) 
+                {
+                    sum = sum + list[i];
+                }
+            return sum;
+
+            }
+
     }
 }
