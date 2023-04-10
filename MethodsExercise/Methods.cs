@@ -62,15 +62,18 @@ namespace MethodsExercise
             return answer;
         }
 
-        public static int Sum(params int[] list)
+        public static void Sum(params int[] list)
             {
             int sum = 0;
                 for (int i = 0; i < list.Length; i++) 
                 {
                     sum = sum + list[i];
-                }
-            return sum;
-
+                    if (i == 0)
+                        Console.Write($"{sum}");
+                    else
+                        Console.Write($" + {sum}");
+            }
+            Console.WriteLine($" = {sum}");
             }
 
     }

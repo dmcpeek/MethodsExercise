@@ -33,7 +33,7 @@
             int2 = 2;
             Console.WriteLine($"{int1} % {int2} = {Methods.Modulus(int1, int2)}");
 
-            Console.WriteLine($"The sum of the numbers is: {Methods.Sum(2, 3, 5, 8, 13)}");
+            Methods.Sum(2, 3, 5, 8, 13);
 
         }
     }
